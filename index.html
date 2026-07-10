@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <script src="image-slot.js"></script>
   <style>
-    html, body { margin: 0; padding: 0; background: #07050d; }
+    html, body { margin: 0; padding: 0; background: #07050d; overflow-x: hidden; max-width: 100%; }
     ::selection { background: rgba(123,97,255,.4); }
     @keyframes pleiadaPulse {
       0% { opacity: 1; transform: scale(1); }
@@ -92,7 +92,7 @@
           <span style="position: absolute; top: -140px; left: -90px; width: 460px; height: 460px; background: radial-gradient(circle, rgba(123,97,255,.34), transparent 64%); pointer-events: none;"></span>
           <div style="position: relative; z-index: 1;">
         <p style="margin: 0 0 36px; font-size: 14px; font-weight: 500; color: #a796ff;">The Missing Link Between Games and AI.</p>
-        <h2 style="font-family: 'Source Serif 4', serif; font-weight: 400; font-size: clamp(27px, 3vw, 44px); line-height: 1.22; margin: 0 0 30px; letter-spacing: -0.008em; text-wrap: balance; color: #f7f5fd;">Just as Business Intelligence turned raw enterprise data into decision-making fuel, Gaming Intelligence turns gameplay into model-training fuel — all aggregated, governed, and delivered at scale.</h2>
+        <h2 style="font-family: 'Source Serif 4', serif; font-weight: 400; font-size: clamp(19px, 1.95vw, 27px); line-height: 1.42; margin: 0 0 28px; letter-spacing: -0.004em; color: #f7f5fd;">Just as Business Intelligence turned raw enterprise data into decision-making power,<br>Gaming Intelligence turns gameplay into model-training fuel<br>— all aggregated, governed, and delivered at scale.</h2>
         <p style="margin: 0; max-width: 780px; font-size: 16.5px; line-height: 1.72; color: #b8b1ca; text-wrap: pretty;">We aggregate gameplay from the people who create it — players, guilds and e-sport teams — and license it to AI labs and data brokers. Our community earns recurring revenue from the data they help generate; labs get a structured, legally compliant source built for the complexity modern models demand.</p>
           </div>
         </div>
@@ -103,7 +103,7 @@
     <section data-screen-label="Marketplace" style="padding: clamp(40px, 5vw, 60px) 0 clamp(80px, 11vw, 150px);">
       <div style="max-width: 1320px; margin: 0 auto; padding: 0 clamp(18px, 4.5vw, 40px);">
         <p style="margin: 0 0 22px; font-family: 'IBM Plex Mono', monospace; letter-spacing: .14em;"><span style="font-size: 21px; font-weight: 600; color: #a796ff;">01</span><span style="font-size: 13px; font-weight: 500; color: #8f7df2;"> · PLAYER DATA + WORLD TELEMETRY</span></p>
-        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: end; margin-bottom: 48px;">
+        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: start; margin-bottom: 48px;">
           <div>
             <h2 style="font-family: 'Source Serif 4', serif; font-weight: 400; font-size: clamp(34px, 3.4vw, 50px); line-height: 1.14; margin: 0; letter-spacing: -0.005em; text-wrap: pretty;">Pleiada Marketplace</h2>
             <p style="margin: 14px 0 0; font-family: 'Hanken Grotesk', sans-serif; font-size: 19px; line-height: 1.4; color: #c4bdd6; text-wrap: pretty;">Gameplay and its raw signal, side by side.</p>
@@ -224,13 +224,19 @@
           </div>
         </div>
       </div>
+        <div style="display: flex; justify-content: center; margin-top: clamp(42px, 6vw, 66px); padding: 0 24px;">
+          <a href="mailto:hello@pleiada.ai?subject=Book%20a%20Demo" style="display: inline-flex; align-items: center; gap: 14px; text-decoration: none; color: #ffffff; font-size: 16px; font-weight: 500;" style-hover="opacity: .82;">
+            Book a Demo
+            <span style="display: inline-flex; width: 32px; height: 32px; background: #7b61ff; align-items: center; justify-content: center; border-radius: 3px; font-size: 16px;">→</span>
+          </a>
+        </div>
     </section>
 
     <!-- PRODUCT 2 — Pleiada Labs · Playgrounds -->
     <section data-screen-label="Playgrounds" style="padding: clamp(40px, 5vw, 60px) 0 clamp(80px, 11vw, 150px);">
       <div style="max-width: 1320px; margin: 0 auto; padding: 0 clamp(18px, 4.5vw, 40px);">
         <p style="margin: 0 0 22px; font-family: 'IBM Plex Mono', monospace; letter-spacing: .14em;"><span style="font-size: 21px; font-weight: 600; color: #a796ff;">02</span><span style="font-size: 13px; font-weight: 500; color: #8f7df2;"> · CUSTOM VIRTUAL WORLDS</span></p>
-        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: end; margin-bottom: 48px;">
+        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: start; margin-bottom: 48px;">
           <div>
             <h2 style="font-family: 'Source Serif 4', serif; font-weight: 400; font-size: clamp(34px, 3.4vw, 50px); line-height: 1.14; margin: 0; letter-spacing: -0.005em; text-wrap: pretty;">Pleiada Playgrounds</h2>
             <p style="margin: 14px 0 0; font-family: 'Hanken Grotesk', sans-serif; font-size: 19px; line-height: 1.4; color: #c4bdd6; text-wrap: pretty;">Custom-built virtual worlds designed to client specification, played by our real-player community.</p>
@@ -368,6 +374,12 @@
           </div>
         </div>
       </div>
+        <div style="display: flex; justify-content: center; margin-top: clamp(42px, 6vw, 66px); padding: 0 24px;">
+          <a href="mailto:hello@pleiada.ai?subject=Book%20a%20Demo" style="display: inline-flex; align-items: center; gap: 14px; text-decoration: none; color: #ffffff; font-size: 16px; font-weight: 500;" style-hover="opacity: .82;">
+            Book a Demo
+            <span style="display: inline-flex; width: 32px; height: 32px; background: #7b61ff; align-items: center; justify-content: center; border-radius: 3px; font-size: 16px;">→</span>
+          </a>
+        </div>
     </section>
 
     <!-- PRODUCT 3 — Pleiada MindSets -->
@@ -377,7 +389,7 @@
           <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; letter-spacing: .14em;"><span style="font-size: 21px; font-weight: 600; color: #a796ff;">03</span><span style="font-size: 13px; font-weight: 500; color: #8f7df2;"> · CONVERSATIONAL REASONING</span></p>
           <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; padding: 3px 9px; border: 1px solid #7b61ff; border-radius: 999px; color: #a796ff;">BETA</span>
         </div>
-        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: end; margin-bottom: 48px;">
+        <div class="rsp-2col" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 90px; align-items: start; margin-bottom: 48px;">
           <div>
             <h2 style="font-family: 'Source Serif 4', serif; font-weight: 400; font-size: clamp(34px, 3.4vw, 50px); line-height: 1.14; margin: 0; letter-spacing: -0.005em; text-wrap: pretty;">Pleiada MindSets</h2>
             <p style="margin: 14px 0 0; font-family: 'Hanken Grotesk', sans-serif; font-size: 19px; line-height: 1.4; color: #c4bdd6; text-wrap: pretty;">Human reasoning data from controlled conversational experiences.</p>
@@ -514,6 +526,12 @@
       </div>
     </div>
       </div>
+        <div style="display: flex; justify-content: center; margin-top: clamp(42px, 6vw, 66px); padding: 0 24px;">
+          <a href="mailto:hello@pleiada.ai?subject=Book%20a%20Demo" style="display: inline-flex; align-items: center; gap: 14px; text-decoration: none; color: #ffffff; font-size: 16px; font-weight: 500;" style-hover="opacity: .82;">
+            Book a Demo
+            <span style="display: inline-flex; width: 32px; height: 32px; background: #7b61ff; align-items: center; justify-content: center; border-radius: 3px; font-size: 16px;">→</span>
+          </a>
+        </div>
     </section>
     <!-- CANONICAL FORMAT (restored from live site, minus duplicate QA block) -->
 <section data-screen-label="Canonical Format" style="padding: clamp(40px, 5vw, 60px) 0 clamp(80px, 11vw, 150px);">
@@ -585,7 +603,7 @@
         </div>
       </div>
       <div class="rsp-qaimg" style="position: relative; z-index: 1; padding: 30px 30px 30px 8px; display: flex; align-items: center;">
-        <video src="assets/qa-home.mp4" poster="assets/qa-home-still.png" preload="auto" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="width: 100%; height: 392px; display: block; object-fit: cover; background: #16131f; border-radius: 10px; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 20px 50px -28px rgba(0,0,0,.8);"></video>
+        <video src="assets/qa-home.mp4" poster="assets/qa-home-still.png" preload="auto" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="width: 100%; height: 392px; display: block; object-fit: contain; background: #0a0713; border-radius: 10px; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 20px 50px -28px rgba(0,0,0,.8);"></video>
       </div>
     </div>
   </div>
@@ -620,10 +638,9 @@
 
   </main>
 
-  <footer data-screen-label="Footer" style="position: relative; z-index: 1; border-top: 1px solid rgba(255,255,255,.09); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 26px 40px; background: rgba(7,5,13,.85);">
-    <span style="font-size: 14px; font-weight: 600; color: #f2f0f8;">Pleiada AI</span>
-    <span style="font-size: 13px; color: #8f7df2;">All Rights Reserved</span>
-    <span></span>
+  <footer data-screen-label="Footer" style="position: relative; z-index: 1; border-top: 1px solid rgba(255,255,255,.09); display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; padding: 26px clamp(20px, 4.5vw, 40px); background: rgba(7,5,13,.85);">
+    <span style="font-size: 13px; color: #8f7df2;">© 2026 Pleiada Labs · All Rights Reserved.</span>
+    <span style="font-size: 13px; color: #8a83a3;">Built in Buenos Aires. Sourced across Latin America. Powering AI worldwide.</span>
   </footer>
 
 </div>
