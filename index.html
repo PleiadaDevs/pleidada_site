@@ -1004,5 +1004,14 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script>
+(function(){
+  function postHeight(){ try { parent.postMessage({ type: 'pleiada-embed-height', height: document.documentElement.scrollHeight }, '*'); } catch(e){} }
+  window.addEventListener('load', postHeight);
+  window.addEventListener('resize', postHeight);
+  if (window.ResizeObserver) { new ResizeObserver(postHeight).observe(document.body); }
+  setInterval(postHeight, 1000);
+})();
+</script>
 </body>
 </html>
